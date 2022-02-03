@@ -11,7 +11,6 @@ opencv_python==4.5.5.62
 pandas==1.4.0
 Pillow==9.0.1
 pycocotools==2.0.4
-pycuda==2021.1
 pydantic==1.9.0
 PyYAML==6.0
 requests
