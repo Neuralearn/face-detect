@@ -13,12 +13,12 @@ from numpy import random
 import copy
 #import torch_tensorrt
 
-from core.logic.yolovface.models.experimental import attempt_load
-from core.logic.yolovface.utils.datasets import letterbox
-from core.logic.yolovface.utils.general import check_img_size, non_max_suppression_face, apply_classifier, scale_coords, xyxy2xywh, \
+from core.logic.yolov5face.models.experimental import attempt_load
+from core.logic.yolov5face.utils.datasets import letterbox
+from core.logic.yolov5face.utils.general import check_img_size, non_max_suppression_face, apply_classifier, scale_coords, xyxy2xywh, \
     strip_optimizer, set_logging, increment_path
-from core.logic.yolovface.utils.plots import plot_one_box
-from core.logic.yolovface.utils.torch_utils import select_device, load_classifier, time_synchronized
+from core.logic.yolov5face.utils.plots import plot_one_box
+from core.logic.yolov5face.utils.torch_utils import select_device, load_classifier, time_synchronized
 
 
 def load_model(weights, device):
@@ -121,7 +121,7 @@ def detect_one(orgimg, device):
 
     import onnxruntime as ort
 
-    ort_session = ort.InferenceSession("core/logic/yolovface/weights/yolov5n-face.onnx")
+    ort_session = ort.InferenceSession("core/logic/yolov5face/weights/yolov5n-face.onnx")
     
     outputs = ort_session.run(
         None,

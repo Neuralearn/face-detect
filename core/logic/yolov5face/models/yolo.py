@@ -11,11 +11,11 @@ import torch.nn as nn
 sys.path.append('./')  # to run '$ python *.py' files in subdirectories
 logger = logging.getLogger(__name__)
 
-from core.logic.yolovface.models.common import Conv, Bottleneck, SPP, DWConv, Focus, BottleneckCSP, C3, ShuffleV2Block, Concat, NMS, autoShape, StemBlock, BlazeBlock, DoubleBlazeBlock
-from core.logic.yolovface.models.experimental import MixConv2d, CrossConv
-from core.logic.yolovface.utils.autoanchor import check_anchor_order
-from core.logic.yolovface.utils.general import make_divisible, check_file, set_logging
-from core.logic.yolovface.utils.torch_utils import time_synchronized, fuse_conv_and_bn, model_info, scale_img, initialize_weights, \
+from core.logic.yolov5face.models.common import Conv, Bottleneck, SPP, DWConv, Focus, BottleneckCSP, C3, ShuffleV2Block, Concat, NMS, autoShape, StemBlock, BlazeBlock, DoubleBlazeBlock
+from core.logic.yolov5face.models.experimental import MixConv2d, CrossConv
+from core.logic.yolov5face.utils.autoanchor import check_anchor_order
+from core.logic.yolov5face.utils.general import make_divisible, check_file, set_logging
+from core.logic.yolov5face.utils.torch_utils import time_synchronized, fuse_conv_and_bn, model_info, scale_img, initialize_weights, \
     select_device, copy_attr
 
 try:

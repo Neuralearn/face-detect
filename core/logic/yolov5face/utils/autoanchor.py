@@ -6,7 +6,7 @@ import yaml
 from scipy.cluster.vq import kmeans
 from tqdm import tqdm
 
-from core.logic.yolovface.utils.general import colorstr
+from core.logic.yolov5face.utils.general import colorstr
 
 
 def check_anchor_order(m):

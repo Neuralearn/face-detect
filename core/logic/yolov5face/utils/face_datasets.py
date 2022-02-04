@@ -17,8 +17,8 @@ from PIL import Image, ExifTags
 from torch.utils.data import Dataset
 from tqdm import tqdm
 
-from core.logic.yolovface.utils.general import xyxy2xywh, xywh2xyxy, clean_str
-from core.logic.yolovface.utils.torch_utils import torch_distributed_zero_first
+from core.logic.yolov5face.utils.general import xyxy2xywh, xywh2xyxy, clean_str
+from core.logic.yolov5face.utils.torch_utils import torch_distributed_zero_first
 
 
 # Parameters

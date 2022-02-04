@@ -16,9 +16,9 @@ import torch
 import torchvision
 import yaml
 
-from core.logic.yolovface.utils.google_utils import gsutil_getsize
-from core.logic.yolovface.utils.metrics import fitness
-from core.logic.yolovface.utils.torch_utils import init_torch_seeds
+from core.logic.yolov5face.utils.google_utils import gsutil_getsize
+from core.logic.yolov5face.utils.metrics import fitness
+from core.logic.yolov5face.utils.torch_utils import init_torch_seeds
 
 # Settings
 torch.set_printoptions(linewidth=320, precision=5, profile='long')
