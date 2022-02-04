@@ -4,7 +4,7 @@ from io import BytesIO
 import numpy as np
 from core.models.output import MessageOutput
 from core.models.input import MessageInput
-from core.logic.processing import detector
+
 from core.logic.yolov5face.detectface import detect_one
 router = APIRouter()
 
