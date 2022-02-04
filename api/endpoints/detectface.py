@@ -5,6 +5,7 @@ import numpy as np
 from core.models.output import MessageOutput
 from core.models.input import MessageInput
 from core.logic.processing import detector
+from core.logic.yolov5face.detectface import detect_one
 router = APIRouter()
 
 
@@ -22,7 +23,8 @@ def hello_endpoint(im: UploadFile):
 
     print(np.array(image).shape)
 
-    return detector(np.array(image))
+    return detect_one(np.array(image), "cpu")
+
     # {
     #     "message1": "Hello, world!",
     #     "message2": f"The largest prime factor of {n} is {largest_prime_factor}. Calculation took {elapsed_time:0.3f} seconds.",
