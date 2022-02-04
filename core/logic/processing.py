@@ -1,6 +1,5 @@
 import torch
-from core.logic.yolov5face.detectface import load_model, detect_one
-
+from core.logic.yolov5face.detectface import detect_one
 
 def detector(image):
 
