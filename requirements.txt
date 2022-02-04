@@ -8,7 +8,8 @@ onnx==1.10.2
 onnx_tf==1.9.0
 onnxruntime==1.10.0
 python-multipart
-opencv_python==4.5.5.62
+#opencv_python==4.5.5.62
+opencv-python-headless==4.2.0.32
 pandas==1.4.0
 Pillow==9.0.1
 pycocotools==2.0.4
